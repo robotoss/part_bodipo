@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         child: BlocBuilder<GlobalBloc, GlobalState>(
           builder: (context, state) {
             if (state is UninitializedState) {
-              return Text('123');
+              return Container();
             } else if (state is AuthenticatedState) {
               return MainPart();
             } else if (state is UnauthenticatedState) {
