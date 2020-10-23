@@ -1,0 +1,89 @@
+{
+    "@@locale": "en",
+    "wellcome": "Wellcome!",
+    "@wellcome": {
+        "description": ""
+    },
+    "signInToContinue": "Sign in to continue",
+    "@signInToContinue": {
+        "description": ""
+    },
+    "login": "Login",
+    "@login": {
+        "description": ""
+    },
+    "password": "Password",
+    "@password": {
+        "description": ""
+    },
+    "signIn": "Sign in",
+    "@signIn": {
+        "description": ""
+    },
+    "forgotPassword": "Forgot password",
+    "@forgotPassword": {
+        "description": ""
+    },
+    "createAnAccount": "Create an account",
+    "@createAnAccount": {
+        "description": ""
+    },
+    "exitText": "Are you sure you want to exit the application?",
+    "@exitText": {
+        "description": ""
+    },
+    "exit": "Exit",
+    "@exit": {
+        "description": ""
+    },
+    "cancel": "Cancel",
+    "@cancel": {
+        "description": ""
+    },
+    "errorEmptyField": "Fill in the field",
+    "@errorEmptyField": {
+        "description": ""
+    },
+    "error": "Error",
+    "@error": {
+        "description": ""
+    },
+    "ok": "Ok",
+    "@ok": {
+        "description": ""
+    },
+    "logout": "Logout",
+    "@logout": {
+        "description": ""
+    },
+    "news": "News",
+    "@news": {
+        "description": ""
+    },
+    "comments": "{value} Comments",
+    "@comments": {
+        "description": "",
+        "placeholders": {
+          "value": {
+            "type": "int",
+            "format": "compactLong"
+          }
+        }
+      
+        
+    },
+    "likes": "{value} Likes",
+    "@likes": {
+        "description": "",
+        "placeholders": {
+          "value": {
+            "type": "int",
+            "format": "compactLong"
+          }
+        }
+    },
+    "share": "Share",
+    "@share": {
+        "description": ""
+    }
+}
