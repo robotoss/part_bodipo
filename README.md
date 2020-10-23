@@ -1,16 +1,17 @@
-# flutter_bodipo
+<!-- ABOUT THE PROJECT -->
+## Об проекте
 
-A new Flutter project.
+![Часть проекта Bodipo](https://i.ibb.co/1XdV2Hf/Screenshot-2020-10-24-at-00-28-10.png)
 
-## Getting Started
+Часть проекта для показа.
 
-This project is a starting point for a Flutter application.
+Включеет в себя:
+* Авторизацию
+* Основное меню навигации
+* Экран с новостями
 
-A few resources to get you started if this is your first Flutter project:
+Проект представлен в урезаном ввиде для ознакомления со стилем написания кода. Для авторизации - Логин test, Пароль 1q2w3e4r
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Реализовано с помощью
+Данный проект реализуется с помощью фреймворка:
+* [Flutter](https://flutter.dev/)
