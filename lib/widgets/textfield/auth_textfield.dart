@@ -42,48 +42,51 @@ class _AuthTextFieldState extends State<AuthTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: widget.textController,
-      focusNode: widget.focusNode,
-      inputFormatters: switchInputFormat(widget.textfieldType),
-      style: ProjectTextStyle.textFieldText,
-      obscureText: hideText,
-      keyboardType: switchInputType(widget.textfieldType),
-      validator: (value) {
-        return switchValidation(context, widget.textfieldType, value);
-      },
-      decoration: InputDecoration(
-        icon: SvgPicture.asset(
-            'assets/icons/${switchIcon(widget.textfieldType)}.svg'),
-        suffixIcon: widget.textfieldType == TextInputFormatType.PASSWORD
-            ? InkWell(
-                onTap: () {
-                  setState(() {
-                    hideText = !hideText;
-                  });
-                },
-                child: Container(
-                  margin: EdgeInsets.all(5),
-                  padding: EdgeInsets.all(5),
-                  child: SvgPicture.asset(
-                    "assets/icons/${hideText ? "ic_password_hide" : "ic_password_show"}.svg",
+    return Container(
+      height: 70,
+      child: TextFormField(
+        controller: widget.textController,
+        focusNode: widget.focusNode,
+        inputFormatters: switchInputFormat(widget.textfieldType),
+        style: ProjectTextStyle.textFieldText,
+        obscureText: hideText,
+        keyboardType: switchInputType(widget.textfieldType),
+        validator: (value) {
+          return switchValidation(context, widget.textfieldType, value);
+        },
+        decoration: InputDecoration(
+          icon: SvgPicture.asset(
+              'assets/icons/${switchIcon(widget.textfieldType)}.svg'),
+          suffixIcon: widget.textfieldType == TextInputFormatType.PASSWORD
+              ? InkWell(
+                  onTap: () {
+                    setState(() {
+                      hideText = !hideText;
+                    });
+                  },
+                  child: Container(
+                    margin: EdgeInsets.all(5),
+                    padding: EdgeInsets.all(5),
+                    child: SvgPicture.asset(
+                      "assets/icons/${hideText ? "ic_password_hide" : "ic_password_show"}.svg",
+                    ),
                   ),
-                ),
-              )
-            : null,
-        hintText: widget.title,
-        hintStyle: ProjectTextStyle.textFieldText,
-        border: UnderlineInputBorder(
-            borderSide:
-                BorderSide(color: ColorPalette.textGrayColor, width: 1)),
-        focusedBorder: UnderlineInputBorder(
-            borderSide:
-                BorderSide(color: ColorPalette.textGrayColor, width: 1)),
-        errorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.red, width: 1)),
-        enabledBorder: UnderlineInputBorder(
-            borderSide:
-                BorderSide(color: ColorPalette.textGrayColor, width: 1)),
+                )
+              : null,
+          hintText: widget.title,
+          hintStyle: ProjectTextStyle.textFieldText,
+          border: UnderlineInputBorder(
+              borderSide:
+                  BorderSide(color: ColorPalette.textGrayColor, width: 1)),
+          focusedBorder: UnderlineInputBorder(
+              borderSide:
+                  BorderSide(color: ColorPalette.textGrayColor, width: 1)),
+          errorBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.red, width: 1)),
+          enabledBorder: UnderlineInputBorder(
+              borderSide:
+                  BorderSide(color: ColorPalette.textGrayColor, width: 1)),
+        ),
       ),
     );
   }
